@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="156.0" prefWidth="209.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="cellUpdatePane" prefHeight="156.0" prefWidth="202.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <Label layoutX="29.0" layoutY="24.0" text="New value" />
+            <TextField fx:id="newVal" layoutX="101.0" layoutY="19.0" prefHeight="27.0" prefWidth="66.0" />
+            <Button layoutX="107.0" layoutY="109.0" mnemonicParsing="false" onAction="#applyCellUpdate" prefWidth="60.0" style="-fx-background-color: rgba(0,0,0,0.08),        linear-gradient(#5a61af, #51536d),        linear-gradient(#e4fbff 0%,#cee6fb 10%, #a5d3fb 50%, #88c6fb 51%, #d5faff 100%);" text="Apply" />
+            <CheckBox fx:id="wall" layoutX="31.0" layoutY="69.0" mnemonicParsing="false" text="Set it to a wall" />
+            <Button layoutX="30.0" layoutY="109.0" mnemonicParsing="false" onAction="#cancelCellUpdate" prefWidth="60.0" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
